@@ -1,0 +1,89 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, pink, lightblue);
+    min-height: 90vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container
+{
+    background: white;
+    width: 60vw;
+    padding: 20px;
+}
+h2, .switch
+{
+  text-align: center;  
+}
+.switch
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+input[type="text"], textarea
+{
+    width: 99%;
+}
+input[type="text"]:focus
+{
+    outline: none;
+    border: pink 1px solid;
+}
+textarea:focus
+{
+    outline: none;
+    border: blue 1px solid;
+}
+form div
+{
+    padding: 2px 0px;
+}
+form div:nth-child(3)
+{
+    padding: 15px 0px;
+}
+.button
+{
+    text-align: center;
+}
+button
+{
+    width: 100px;
+    padding: 3px;
+    background: white;
+    border: grey 0.5px solid;
+    margin-top: 2px;
+}
+
+input[type="checkbox"]
+        {
+            position: relative;
+            width: 40px;
+            height: 20px;
+            appearance: none;
+            background: rgb(214, 214, 214);
+            border-radius: 20px;
+        }
+        input:checked[type="checkbox"]
+        {background: blue;}
+        input[type="checkbox"]::before
+        {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: 10%;
+            left: 5%;
+            background: rgb(255, 255, 255);
+                 
+        }
+        input:checked[type="checkbox"]::before
+        {
+            left: 20px;
+        }
